@@ -16,14 +16,21 @@
 		8CD0A39C176B7235005F8527 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD0A39B176B7235005F8527 /* Default.png */; };
 		8CD0A39E176B7235005F8527 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD0A39D176B7235005F8527 /* Default@2x.png */; };
 		8CD0A3A0176B7235005F8527 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD0A39F176B7235005F8527 /* Default-568h@2x.png */; };
-		8CD0A3A3176B7235005F8527 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD0A3A1176B7235005F8527 /* MainStoryboard_iPhone.storyboard */; };
-		8CD0A3A6176B7235005F8527 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD0A3A4176B7235005F8527 /* MainStoryboard_iPad.storyboard */; };
+		8CD0A3A6176B7235005F8527 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD0A3A4176B7235005F8527 /* MainStoryboard.storyboard */; };
 		8CD0A3A9176B7235005F8527 /* BMKFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0A3A8176B7235005F8527 /* BMKFirstViewController.m */; };
 		8CD0A3AB176B7235005F8527 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD0A3AA176B7235005F8527 /* first.png */; };
 		8CD0A3AD176B7235005F8527 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD0A3AC176B7235005F8527 /* first@2x.png */; };
 		8CD0A3B0176B7235005F8527 /* BMKSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0A3AF176B7235005F8527 /* BMKSecondViewController.m */; };
 		8CD0A3B2176B7235005F8527 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD0A3B1176B7235005F8527 /* second.png */; };
 		8CD0A3B4176B7235005F8527 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD0A3B3176B7235005F8527 /* second@2x.png */; };
+		8CD0A3BC176B73B7005F8527 /* BMKThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0A3BB176B73B7005F8527 /* BMKThirdViewController.m */; };
+		8CD0A3BE176B74BA005F8527 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD0A3BD176B74BA005F8527 /* CoreLocation.framework */; };
+		8CD0A3C0176B74C1005F8527 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD0A3BF176B74C1005F8527 /* MapKit.framework */; };
+		8CD0A3C3176F6A0E005F8527 /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0A3C2176F6A0E005F8527 /* MyAnnotation.m */; };
+		8CD0A3CA176F800F005F8527 /* CustomPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD0A3C8176F800F005F8527 /* CustomPin.png */; };
+		8CD0A3CB176F800F005F8527 /* CustomPin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD0A3C9176F800F005F8527 /* CustomPin@2x.png */; };
+		8CD0A3CE176F959D005F8527 /* third.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD0A3CC176F959D005F8527 /* third.png */; };
+		8CD0A3CF176F959D005F8527 /* third@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD0A3CD176F959D005F8527 /* third@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +47,7 @@
 		8CD0A39B176B7235005F8527 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		8CD0A39D176B7235005F8527 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8CD0A39F176B7235005F8527 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		8CD0A3A2176B7235005F8527 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		8CD0A3A5176B7235005F8527 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		8CD0A3A5176B7235005F8527 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		8CD0A3A7176B7235005F8527 /* BMKFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMKFirstViewController.h; sourceTree = "<group>"; };
 		8CD0A3A8176B7235005F8527 /* BMKFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMKFirstViewController.m; sourceTree = "<group>"; };
 		8CD0A3AA176B7235005F8527 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
@@ -50,6 +56,16 @@
 		8CD0A3AF176B7235005F8527 /* BMKSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMKSecondViewController.m; sourceTree = "<group>"; };
 		8CD0A3B1176B7235005F8527 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		8CD0A3B3176B7235005F8527 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		8CD0A3BA176B73B7005F8527 /* BMKThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKThirdViewController.h; sourceTree = "<group>"; };
+		8CD0A3BB176B73B7005F8527 /* BMKThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKThirdViewController.m; sourceTree = "<group>"; };
+		8CD0A3BD176B74BA005F8527 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8CD0A3BF176B74C1005F8527 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8CD0A3C1176F6A0E005F8527 /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		8CD0A3C2176F6A0E005F8527 /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
+		8CD0A3C8176F800F005F8527 /* CustomPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CustomPin.png; sourceTree = "<group>"; };
+		8CD0A3C9176F800F005F8527 /* CustomPin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CustomPin@2x.png"; sourceTree = "<group>"; };
+		8CD0A3CC176F959D005F8527 /* third.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = third.png; sourceTree = "<group>"; };
+		8CD0A3CD176F959D005F8527 /* third@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "third@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD0A3C0176B74C1005F8527 /* MapKit.framework in Frameworks */,
+				8CD0A3BE176B74BA005F8527 /* CoreLocation.framework in Frameworks */,
 				8CD0A38A176B7235005F8527 /* UIKit.framework in Frameworks */,
 				8CD0A38C176B7235005F8527 /* Foundation.framework in Frameworks */,
 				8CD0A38E176B7235005F8527 /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +87,8 @@
 		8CD0A37D176B7235005F8527 = {
 			isa = PBXGroup;
 			children = (
+				8CD0A3BF176B74C1005F8527 /* MapKit.framework */,
+				8CD0A3BD176B74BA005F8527 /* CoreLocation.framework */,
 				8CD0A38F176B7235005F8527 /* BasicMapKitStuff */,
 				8CD0A388176B7235005F8527 /* Frameworks */,
 				8CD0A387176B7235005F8527 /* Products */,
@@ -96,18 +116,25 @@
 		8CD0A38F176B7235005F8527 /* BasicMapKitStuff */ = {
 			isa = PBXGroup;
 			children = (
+				8CD0A3C1176F6A0E005F8527 /* MyAnnotation.h */,
+				8CD0A3C2176F6A0E005F8527 /* MyAnnotation.m */,
 				8CD0A398176B7235005F8527 /* BMKAppDelegate.h */,
 				8CD0A399176B7235005F8527 /* BMKAppDelegate.m */,
-				8CD0A3A1176B7235005F8527 /* MainStoryboard_iPhone.storyboard */,
-				8CD0A3A4176B7235005F8527 /* MainStoryboard_iPad.storyboard */,
+				8CD0A3A4176B7235005F8527 /* MainStoryboard.storyboard */,
 				8CD0A3A7176B7235005F8527 /* BMKFirstViewController.h */,
 				8CD0A3A8176B7235005F8527 /* BMKFirstViewController.m */,
-				8CD0A3AA176B7235005F8527 /* first.png */,
-				8CD0A3AC176B7235005F8527 /* first@2x.png */,
 				8CD0A3AE176B7235005F8527 /* BMKSecondViewController.h */,
 				8CD0A3AF176B7235005F8527 /* BMKSecondViewController.m */,
+				8CD0A3BA176B73B7005F8527 /* BMKThirdViewController.h */,
+				8CD0A3BB176B73B7005F8527 /* BMKThirdViewController.m */,
+				8CD0A3AA176B7235005F8527 /* first.png */,
+				8CD0A3AC176B7235005F8527 /* first@2x.png */,
 				8CD0A3B1176B7235005F8527 /* second.png */,
 				8CD0A3B3176B7235005F8527 /* second@2x.png */,
+				8CD0A3CC176F959D005F8527 /* third.png */,
+				8CD0A3CD176F959D005F8527 /* third@2x.png */,
+				8CD0A3C8176F800F005F8527 /* CustomPin.png */,
+				8CD0A3C9176F800F005F8527 /* CustomPin@2x.png */,
 				8CD0A390176B7235005F8527 /* Supporting Files */,
 			);
 			path = BasicMapKitStuff;
@@ -183,12 +210,15 @@
 				8CD0A39C176B7235005F8527 /* Default.png in Resources */,
 				8CD0A39E176B7235005F8527 /* Default@2x.png in Resources */,
 				8CD0A3A0176B7235005F8527 /* Default-568h@2x.png in Resources */,
-				8CD0A3A3176B7235005F8527 /* MainStoryboard_iPhone.storyboard in Resources */,
-				8CD0A3A6176B7235005F8527 /* MainStoryboard_iPad.storyboard in Resources */,
+				8CD0A3A6176B7235005F8527 /* MainStoryboard.storyboard in Resources */,
 				8CD0A3AB176B7235005F8527 /* first.png in Resources */,
 				8CD0A3AD176B7235005F8527 /* first@2x.png in Resources */,
 				8CD0A3B2176B7235005F8527 /* second.png in Resources */,
 				8CD0A3B4176B7235005F8527 /* second@2x.png in Resources */,
+				8CD0A3CA176F800F005F8527 /* CustomPin.png in Resources */,
+				8CD0A3CB176F800F005F8527 /* CustomPin@2x.png in Resources */,
+				8CD0A3CE176F959D005F8527 /* third.png in Resources */,
+				8CD0A3CF176F959D005F8527 /* third@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +233,8 @@
 				8CD0A39A176B7235005F8527 /* BMKAppDelegate.m in Sources */,
 				8CD0A3A9176B7235005F8527 /* BMKFirstViewController.m in Sources */,
 				8CD0A3B0176B7235005F8527 /* BMKSecondViewController.m in Sources */,
+				8CD0A3BC176B73B7005F8527 /* BMKThirdViewController.m in Sources */,
+				8CD0A3C3176F6A0E005F8527 /* MyAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,20 +249,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		8CD0A3A1176B7235005F8527 /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8CD0A3A2176B7235005F8527 /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		8CD0A3A4176B7235005F8527 /* MainStoryboard_iPad.storyboard */ = {
+		8CD0A3A4176B7235005F8527 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8CD0A3A5176B7235005F8527 /* en */,
 			);
-			name = MainStoryboard_iPad.storyboard;
+			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -300,6 +324,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BasicMapKitStuff/BasicMapKitStuff-Prefix.pch";
 				INFOPLIST_FILE = "BasicMapKitStuff/BasicMapKitStuff-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -311,6 +336,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BasicMapKitStuff/BasicMapKitStuff-Prefix.pch";
 				INFOPLIST_FILE = "BasicMapKitStuff/BasicMapKitStuff-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -335,6 +361,7 @@
 				8CD0A3B9176B7235005F8527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
