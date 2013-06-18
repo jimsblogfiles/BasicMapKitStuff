@@ -21,8 +21,7 @@
     
 	Class mapItemClass = [MKMapItem class];
     
-	if (mapItemClass && [mapItemClass respondsToSelector:@selector(openMapsWithItems:launchOptions:)])
-	{
+	if (mapItemClass && [mapItemClass respondsToSelector:@selector(openMapsWithItems:launchOptions:)]) {
         
 		CLLocationCoordinate2D coordinate = _mapView.userLocation.coordinate;
 		MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:coordinate addressDictionary:nil];
@@ -59,16 +58,31 @@
     
 }
 
-- (IBAction)actionMapView:(id)sender {
-    [_mapView setMapType:MKMapTypeStandard];
-}
+- (IBAction)actionMapType:(id)sender {
+    
+    switch (_mapType) {
 
-- (IBAction)actionSatelliteView:(id)sender {
-    [_mapView setMapType:MKMapTypeSatellite];
-}
+        case 0:
+            [_mapView setMapType:MKMapTypeHybrid];
+            _mapType++;
+            break;
 
-- (IBAction)actionHybridView:(id)sender {
-    [_mapView setMapType:MKMapTypeHybrid];
+        case 1:
+            [_mapView setMapType:MKMapTypeSatellite];
+            _mapType++;
+            break;
+
+        case 2:
+            [_mapView setMapType:MKMapTypeStandard];
+            _mapType = 0;
+            break;
+            
+        default:
+            _mapType = 0;
+            break;
+
+    }
+
 }
 
 - (IBAction)actionGetCurrentZoomLevel:(id)sender {
@@ -104,7 +118,9 @@
         [_mapView setShowsUserLocation:YES];
         
     }    
-    
+ 
+    _mapType = 0;
+
 }
 
 - (void)didReceiveMemoryWarning

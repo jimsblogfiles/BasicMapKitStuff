@@ -15,7 +15,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0IE-V8-0O6"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFH-Ia-gjN">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Zoom To Current Location">
+                                <state key="normal" title="Zoom">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -28,7 +28,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5V-SN-nhV">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Current Zoom Level">
+                                <state key="normal" title="Zoom Level">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -41,7 +41,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLS-R8-XvJ">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Map View">
+                                <state key="normal" title="Map Type">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -49,38 +49,15 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="actionMapView:" destination="2" eventType="touchUpInside" id="ThU-FC-iLG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9I-qY-4uk">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Satellite View">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="actionSatelliteView:" destination="2" eventType="touchUpInside" id="e6i-v2-hw8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9E-1p-kdQ">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Hybrid View">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="actionHybridView:" destination="2" eventType="touchUpInside" id="6H7-Oq-dWN"/>
+                                    <action selector="actionMapType:" destination="2" eventType="touchUpInside" id="2lv-sh-A7J"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aev-ns-TDh">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="tPV-Bo-W9k"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Directions To Current Location">
+                                <state key="normal" title="Directions">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -94,27 +71,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="c9I-qY-4uk" firstAttribute="trailing" secondItem="gLS-R8-XvJ" secondAttribute="trailing" type="default" id="3LL-OX-1f1"/>
                             <constraint firstItem="gLS-R8-XvJ" firstAttribute="top" secondItem="XFH-Ia-gjN" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="7kJ-Vr-S8O"/>
-                            <constraint firstItem="XFH-Ia-gjN" firstAttribute="trailing" secondItem="Aev-ns-TDh" secondAttribute="trailing" type="default" id="9Fo-dB-19Z"/>
                             <constraint firstItem="M5V-SN-nhV" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="AIK-aK-H2v"/>
                             <constraint firstItem="0IE-V8-0O6" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="CPk-o8-F5F"/>
-                            <constraint firstItem="c9I-qY-4uk" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="DE3-zr-pHo"/>
-                            <constraint firstItem="n9E-1p-kdQ" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="GBq-1g-ndD"/>
                             <constraint firstItem="XFH-Ia-gjN" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="M85-lL-Zsf"/>
                             <constraint firstAttribute="bottom" secondItem="0IE-V8-0O6" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="NaN-ii-iyQ"/>
-                            <constraint firstItem="n9E-1p-kdQ" firstAttribute="top" secondItem="c9I-qY-4uk" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Pd3-nI-1g4"/>
-                            <constraint firstItem="gLS-R8-XvJ" firstAttribute="trailing" secondItem="XFH-Ia-gjN" secondAttribute="trailing" type="default" id="URw-Bc-qd4"/>
-                            <constraint firstItem="M5V-SN-nhV" firstAttribute="top" secondItem="n9E-1p-kdQ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Wz5-zB-iSM"/>
+                            <constraint firstItem="XFH-Ia-gjN" firstAttribute="trailing" secondItem="gLS-R8-XvJ" secondAttribute="trailing" type="default" id="WJE-j9-TC4"/>
                             <constraint firstItem="Aev-ns-TDh" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="X0o-Ug-ro2"/>
                             <constraint firstItem="gLS-R8-XvJ" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ymu-gq-pfu"/>
                             <constraint firstItem="XFH-Ia-gjN" firstAttribute="top" secondItem="Aev-ns-TDh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="dPC-I5-tdO"/>
                             <constraint firstItem="Aev-ns-TDh" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="f3B-nc-l96"/>
-                            <constraint firstItem="c9I-qY-4uk" firstAttribute="top" secondItem="gLS-R8-XvJ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="hDa-ID-bf2"/>
-                            <constraint firstItem="c9I-qY-4uk" firstAttribute="trailing" secondItem="n9E-1p-kdQ" secondAttribute="trailing" type="default" id="hZ2-wZ-lPN"/>
-                            <constraint firstItem="n9E-1p-kdQ" firstAttribute="trailing" secondItem="M5V-SN-nhV" secondAttribute="trailing" type="default" id="plk-Kd-nli"/>
+                            <constraint firstItem="XFH-Ia-gjN" firstAttribute="trailing" secondItem="Aev-ns-TDh" secondAttribute="trailing" type="default" id="oDk-TR-K7d"/>
                             <constraint firstItem="0IE-V8-0O6" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="psv-iI-Lak"/>
                             <constraint firstAttribute="trailing" secondItem="0IE-V8-0O6" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="qtx-IE-koi"/>
+                            <constraint firstItem="gLS-R8-XvJ" firstAttribute="trailing" secondItem="M5V-SN-nhV" secondAttribute="trailing" type="default" id="rlk-t4-z6H"/>
+                            <constraint firstItem="M5V-SN-nhV" firstAttribute="top" secondItem="gLS-R8-XvJ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="uJY-ZQ-OkN"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Basic Stuff" image="first" id="7"/>
@@ -213,6 +184,7 @@
                 <relationship kind="action" name="actionDirectionsToCurrentLocation:"/>
                 <relationship kind="action" name="actionGetCurrentZoomLevel:"/>
                 <relationship kind="action" name="actionHybridView:"/>
+                <relationship kind="action" name="actionMapType:"/>
                 <relationship kind="action" name="actionMapView:"/>
                 <relationship kind="action" name="actionSatelliteView:"/>
                 <relationship kind="action" name="actionZoomToCurrentLocation:"/>
@@ -222,8 +194,6 @@
         <class className="BMKSecondViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BMKSecondViewController.h"/>
             <relationships>
-                <relationship kind="action" name="actionDropRandomPin:"/>
-                <relationship kind="action" name="actionSendCoordinateToMaps:"/>
                 <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
             </relationships>
         </class>

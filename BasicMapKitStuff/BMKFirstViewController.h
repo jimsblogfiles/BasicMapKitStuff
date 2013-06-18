@@ -12,5 +12,6 @@
 @interface BMKFirstViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (nonatomic, assign) int mapType;
 
 @end
